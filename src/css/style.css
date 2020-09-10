@@ -269,7 +269,7 @@ header {
 }
 
 .hero .textos.initial {
-    transform: translateX(-1000px);
+    transform: translateX(-100%);
 }
 
 .hero .textos.visible {
@@ -324,7 +324,7 @@ header {
 
 .about .image.initial {
     opacity: 0;
-    transform: translateX(500px);
+    transform: translateX(100%);
 }
 
 .about .image.visible {
@@ -447,7 +447,7 @@ header {
 }
 
 .plans.initial {
-    transform: translateX(-1000px);
+    transform: translateX(-100%);
 }
 
 .plans.visible {
@@ -644,7 +644,7 @@ header {
 }
 
 .tab button:hover {
-    background: #003172;
+    background: #9c916e;
 }
   
 .member {
@@ -744,6 +744,10 @@ footer {
     h1 {
         width: 100%;
     }
+
+    .logo {
+        margin: 0;
+    }
     .icon-menu {
         display: block;
         font-size: 40px;
@@ -798,7 +802,6 @@ footer {
         flex-direction: column;
     }
 
-   
 
     .plan {
         width: 100%;
@@ -831,7 +834,14 @@ footer {
 
 
 @media screen and (max-width: 568px) {
-
+    .moon {
+        width: 200px;
+        height: 200px;
+    }
+    .moon .moon-img{
+        width: 200px;
+        height: 200px;
+    }
     .title {
         font-size: 30px;
     }
