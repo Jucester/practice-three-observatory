@@ -46,10 +46,10 @@ let menu = document.querySelector('.navbar');
 
 icon.addEventListener('click', () => {
     console.log('click')
-    if (menu.style.top === '80px') {
-        menu.style.top = '-550px';
+    if (menu.style.right === '-40px') {
+        menu.style.right = '-500px';
     } else {
-        menu.style.top = '80px';
+        menu.style.right = '-40px';
     }
 })
 

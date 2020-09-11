@@ -397,17 +397,24 @@ header {
     text-align: center;
 }
 
-
 .science  .content .image {
     width: 400px;
     height: 200px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    animation: slide-up 1s;
 }
 
-.science  .content .image img {
+.science .content .image.initial {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.science .content .image.visible {
+    animation: right-slide 1s linear;
+}
+
+.science .content .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -757,21 +764,26 @@ footer {
 
     header {
         overflow: hidden;
-
+        background: rgba(34, 34, 34, 0.8);
+        height: 30px;
     }
 
 
     .navbar {
-       
+        padding: 30px;
+        background: rgba(34, 34, 34, 0.8);
         flex-direction: column;
         position: fixed;
-        top: -550px;
+        height: 100vh;
+        right: -500px;
+        top: 70px;
         transition: all .5s linear;
     }
 
     .navbar > a {
         margin-bottom: 50px;
     }
+    
 
     .about .content {
         flex-direction: column-reverse;
@@ -831,7 +843,6 @@ footer {
 
 
 }
-
 
 @media screen and (max-width: 568px) {
     .moon {
@@ -921,7 +932,6 @@ footer {
     }
 
 }
-
 
 @media screen and (max-width: 350px) {
 
